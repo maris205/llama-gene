@@ -23,10 +23,53 @@ Since the original llama model has been trained primarily on English natural lan
 
 
 # Training Strategy
+## llama base model
+Given the usage rules for LLaMA, we are using by default the HF-format model converted from an early test version of LLaMA. If you need to test LLaMA 2 or LLaMA 3 and other official versions, you will need to apply on Hugging Face.
+
 ## Tokenization
+We trained the vocabulary for DNA and protein sequences using BPE, then merged them into the original LLaMA vocabulary (32,000 tokens). Both the DNA and protein vocabularies consist of 30,000 words, resulting in a final vocabulary size of approximately 91,000 words.
+
+step 1, train BEP dict
+
+dna_model/build_sentence_dna_bpe.ipynb
+
+step 2, merge dict
+
+dna_model/merge_dna_eng_llama_dict.ipynb
+
+see same code in dna_protein_model for mixed model.
+
 
 ## Pretraining
+Due to the large number of parameters in LLaMA models, ranging from 7B to 405B, performing full-parameter continuous pre-training would be very costly. Therefore, we adopted the LoRA method for training, specifically using the PEFT framework from Hugging Face.  The parameter settings were referenced from the configuration of llama-chinese.
+
+With this setup, approximately 10% of the parameters are being trained. On an 8-card L20 server, it takes about one week to complete training with 16GB of data.
+
+run:
+dna_model/run_pt.sh
+
+see same code in dna_protein_model for mixed model.
+
 
 ## Instruction Fine-tuning
+For fine-tuning, we used typical gene sequence analysis tasks and converted them into a fine-tuning data format for instruction tuning.
+
+![Alt Text](./sft.png)
+
+run:
+dna_model/run_sft.sh
+
+see same code in dna_protein_model for mixed model.
+
+## llama-gene model
+
+llama-dna pretrain model: https://huggingface.co/dnagpt/llama-dna 
+
+llama-dna sft model:  https://huggingface.co/dnagpt/llama-dna-sft
+
+llama-dna-protein pretrain model: https://huggingface.co/dnagpt/llama-gene
+
+llama-dna-protein sft model:  https://huggingface.co/dnagpt/llama-gene-sft
+
 
 
