@@ -30,11 +30,13 @@ download llama test model(Please note the usage rules for LLaMA):
 
 git lfs clone https://huggingface.co/yahma/llama-7b-hf
 
+
 Pytorch should be installed first.
 
 Then run install:
 
 pip install transformers==4.28.1 sentencepiece==0.1.97 google protobuf deepspeed peft
+
 
 If  meet problem of peft, run:
 
