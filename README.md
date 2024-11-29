@@ -26,6 +26,10 @@ Since the original llama model has been trained primarily on English natural lan
 ## llama base model
 Given the usage rules for LLaMA, we are using by default the HF-format model converted from an early test version of LLaMA. If you need to test LLaMA 2 or LLaMA 3 and other official versions, you will need to apply on Hugging Face.
 
+download llama test model(Please note the usage rules for LLaMA):
+
+git lfs clone https://huggingface.co/yahma/llama-7b-hf
+
 Pytorch should be installed first.
 
 Then run install:
