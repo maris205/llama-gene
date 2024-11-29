@@ -33,9 +33,13 @@ Then run install:
 pip install transformers==4.28.1 sentencepiece==0.1.97 google protobuf deepspeed peft
 
 If  meet problem of peft, run:
+
 git clone https://github.com/huggingface/peft.git
+
 cd peft
+
 git checkout 13e53fc
+
 pip install . 
 
 
