@@ -26,6 +26,20 @@ Since the original llama model has been trained primarily on English natural lan
 ## llama base model
 Given the usage rules for LLaMA, we are using by default the HF-format model converted from an early test version of LLaMA. If you need to test LLaMA 2 or LLaMA 3 and other official versions, you will need to apply on Hugging Face.
 
+Pytorch should be installed first.
+
+Then run install:
+
+pip install transformers==4.28.1 sentencepiece==0.1.97 google protobuf deepspeed peft
+
+If  meet problem of peft, run:
+git clone https://github.com/huggingface/peft.git
+cd peft
+git checkout 13e53fc
+pip install . 
+
+
+
 ## Tokenization
 We trained the vocabulary for DNA and protein sequences using BPE, then merged them into the original LLaMA vocabulary (32,000 tokens). Both the DNA and protein vocabularies consist of 30,000 words, resulting in a final vocabulary size of approximately 91,000 words.
 
