@@ -74,6 +74,8 @@ dna_model/run_pt.sh
 
 see same code in dna_protein_model for mixed model.
 
+The pretrain model of DNA shoud be copy to dna_protein_model and revise the run_pt.sh parameter(pretrained_model=?).
+
 
 ## Instruction Fine-tuning
 For fine-tuning, we used typical gene sequence analysis tasks and converted them into a fine-tuning data format for instruction tuning.
