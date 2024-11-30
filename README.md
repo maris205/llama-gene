@@ -98,4 +98,20 @@ llama-dna-protein pretrain model: https://huggingface.co/dnagpt/llama-gene
 llama-dna-protein sft model:  https://huggingface.co/dnagpt/llama-gene-sft
 
 
+# experiment results
+
+| Task               | sequence type | llama-gene | SOTA |
+|--------------------|---------------|------------|------|
+| classification     | DNA           | 0.83       | 0.84 |
+| classification     | protein       | 0.64       | 0.72 |
+| structure prediction | DNA           | 0.81       | 0.85 |
+| structure prediction | protein       | 0.73       | 0.85 |
+| multiple sequence  | DNA+DNA       | 0.66       | 0.78 |
+| multiple sequence  | protein+protein | 0.63       | 0.87 |
+| multiple sequence  | DNA+protein   | 0.71       | 0.91 |
+| function prediction | DNA           | 0.76       | 0.81 |
+| function prediction | Protein       | 0.71       | 0.81 |
+| regression task    | DNA           | 0.83       | 0.87 |
+| regression task    | Protein       | 0.82       | 0.86 |
+
 
