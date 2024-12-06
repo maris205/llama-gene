@@ -22,6 +22,10 @@ Since the original llama model has been trained primarily on English natural lan
 | Instruction finetune| UniProt function                | 300M      | Protein translation|
 
 
+data link:https://huggingface.co/dnagpt/llama-gene-train-data
+
+Instruction finetune data ongoing Updates
+
 # Training Strategy
 ## llama base model
 Given the usage rules for LLaMA, we are using by default the HF-format model converted from an early test version of LLaMA. If you need to test LLaMA 2 or LLaMA 3 and other official versions, you will need to apply on Hugging Face.
