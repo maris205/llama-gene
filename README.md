@@ -118,6 +118,7 @@ llama-dna-protein sft model:  https://huggingface.co/dnagpt/llama-gene-sft
 | regression task    | DNA           | 0.83       | 0.87 |
 | regression task    | Protein       | 0.82       | 0.86 |
 
+The benchmark score is ACC(Accuracy)
 
 # paper
 ```
