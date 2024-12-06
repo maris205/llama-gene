@@ -116,6 +116,7 @@ llama-dna-protein sft model:  https://huggingface.co/dnagpt/llama-gene-sft
 
 
 # paper
+```
 @misc{liang2024llamagenegeneralpurposegenetask,
       title={LLaMA-Gene: A General-purpose Gene Task Large Language Model Based on Instruction Fine-tuning}, 
       author={Wang Liang},
@@ -125,3 +126,4 @@ llama-dna-protein sft model:  https://huggingface.co/dnagpt/llama-gene-sft
       primaryClass={q-bio.GN},
       url={https://arxiv.org/abs/2412.00471}, 
 }
+```
