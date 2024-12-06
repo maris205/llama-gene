@@ -115,3 +115,13 @@ llama-dna-protein sft model:  https://huggingface.co/dnagpt/llama-gene-sft
 | regression task    | Protein       | 0.82       | 0.86 |
 
 
+# paper
+@misc{liang2024llamagenegeneralpurposegenetask,
+      title={LLaMA-Gene: A General-purpose Gene Task Large Language Model Based on Instruction Fine-tuning}, 
+      author={Wang Liang},
+      year={2024},
+      eprint={2412.00471},
+      archivePrefix={arXiv},
+      primaryClass={q-bio.GN},
+      url={https://arxiv.org/abs/2412.00471}, 
+}
