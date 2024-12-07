@@ -101,6 +101,13 @@ llama-dna-protein pretrain model: https://huggingface.co/dnagpt/llama-gene
 
 llama-dna-protein sft model:  https://huggingface.co/dnagpt/llama-gene-sft
 
+## model test
+
+dna_model/llama_pretrain_test.ipynb   ,  pretrain model test
+
+dna_model/llama_sft_test.ipynb   ,  finetune model test
+
+see same code in dna_protein_model for mixed model test.
 
 # experiment results
 
