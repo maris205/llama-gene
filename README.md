@@ -39,10 +39,9 @@ Pytorch should be installed first.
 
 Then run install:
 
-pip install transformers==4.28.1 sentencepiece==0.1.97 google protobuf deepspeed peft
+pip install transformers==4.45.2 deepspeed==0.15.2 accelerate==1.0.0 sentencepiece  google protobuf 
 
-
-If  meet problem of peft, run:
+Install peft, run:
 
 git clone https://github.com/huggingface/peft.git
 
